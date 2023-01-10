@@ -134,7 +134,7 @@ app.post('/todos', async (req, res) => {
     try{
         const todos = req.body;
         const result = await Todos.create(todos);
-        res.status(201).json(result);//se creó un nuevo recurso como resultado
+        res.status(201).json(result);
     }catch(error){
         console.log(error);
     }
